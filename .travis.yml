@@ -11,5 +11,7 @@ deploy:
   skip_cleanup: true
   api_key:
     secure: qTSM2voyxQCneRiZ21dcuBMHqaVjR+n+S0Fq6a7CGaDAJPOGgS+RjtInsA8ns+ajteUQk/4snoR0ZjbEm3mXkEhMpTqNLNbEeHpCB1uMDhBr6ZIgi5ciO7s9f/77TEip46mXYcykdfBai5HvZN8qrYYxXg0v2rWB62L4Hp0TynNy9fDtyyGI5fDqriABGBsCDuYpDMtDzuwdyaDyB+StqeNhHJqznWiGhf9iJglTW9H2pXUNEMSldvmnYj6xEWedO0brMKWJfXENwJ05iq+UmaluiDCv7a1PRbh04Nb9BGFgKLzGO43D6GMZYSSIxV/fm2fubRzR0hWvx06dT55+cjB66IFRUvLDdz5/jLJ/DaI8fhDwhO5H3HbGtdGiClG47o2/YNLfx600Eu6KMpLnl7cEAXhvjDLzKnAq4FOujiL6HimI+y2SjaBN31utYnG3uz9Mvilq/tuq4FZDfcEjxsTQhtaOttPWV2uQElD+LXpfE0b+lUxdJ/jUM1MuSHBb0buvxeo0A2VmJw0Len+hFlxcCej7sOQ6kaMfou/o2CHzMKcvXytXAZw+TzieezF9e7ufWPtyJ+b82JW9I8ehfAXV0RmSuKN8HuTPjLuYPYHcmKCMdLnTXNbtstQaFFAUGsd3nHeRk/3dOL2zKIs2SXtygzN3eQk81GgiLGQ8lUs=
+  file:
+    - "dist/jquery.jquery-select-utils.min.js"
   on:
     tags: true
