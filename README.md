@@ -4,6 +4,11 @@ A collection of methods to handle HTML's SELECT elements.
 
 [![Build Status](https://travis-ci.org/antoniom/jquery-select-utils.svg?branch=master)](https://travis-ci.org/antoniom/jquery-select-utils)
 
+## Installation
+```
+bower install jquery-select-utils
+```
+
 ## Getting Started
 
 Download the [production version][min] or the [development version][max].
