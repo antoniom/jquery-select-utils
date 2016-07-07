@@ -30,6 +30,16 @@
         return prompt;
     };
 
+    var getOffsetArgument = function(offset) {
+        if ($.type(offset) === 'number') {
+            offset = offset;
+        } else {
+            offset = 0;
+        }
+
+        return offset;
+    };
+
     var methods = {
         setEmpty: function(defaultTxt) {
             $(this).find('option').remove().end();
@@ -55,6 +65,24 @@
                 list.append($('<option>', { 
                     value: item[keyProp],
                     text: item[valueProp] 
+                }));
+            });
+
+            return $(this);
+        },
+        populateFromArray: function(items, prompt, offset) {
+
+            var list = $(this);
+            prompt = getPromptArgument(prompt);
+
+            $(this).selectUtils('setEmpty', prompt);
+
+            offset = getOffsetArgument(offset);
+
+            $.each(items, function (i, item) {
+                list.append($('<option>', {
+                    value: (i + offset),
+                    text: item
                 }));
             });
 
