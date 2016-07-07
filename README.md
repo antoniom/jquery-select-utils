@@ -23,9 +23,15 @@ In your web page:
 <script src="dist/jquery-select-utils.min.js"></script>
 <script>
   jQuery(function ($) {
-    $('your-select-element').selectUtils('setEmpty'); // To empty a select list
-    $('your-select-element').selectUtils('setEmpty', 'default prompt'); // To empty the list and leave a prompt
-    $('your-select-element').selectUtils('populateFromObjectList', [{id: 1, name: "Name 1"}, {id: 2, name: "Name 2"}], 'id', 'name', 'Please Select'); // to populate from an object list (the last argument stands for the prompt and is optional)
+  	// Empty a select list
+    $('your-select-element').selectUtils('setEmpty');
+    // Empty the list and leave a prompt
+    $('your-select-element').selectUtils('setEmpty', 'default prompt'); 
+    // Populate from an object list (the last argument stands for the prompt and is optional)
+    $('your-select-element').selectUtils('populateFromObjectList', [{id: 1, name: "Name 1"}, {id: 2, name: "Name 2"}], 'id', 'name', 'Please Select');
+    // Populate from an array. The array key is used for the lists value. The last argument is used in order to add an offset from the array's key.
+    $('your-select-element').selectUtils('populateFromArray', ["DATA 1", "DATA 2", "DATA 3", "DATA 4"], 'Please Select', 1);
+
   });
 </script>
 ```
